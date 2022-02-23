@@ -5,19 +5,13 @@ import java.io.*;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.effect.ImageInput;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-import javax.imageio.ImageIO;
-import javax.swing.JPanel;
-
-import java.nio.Buffer;
-
 public class HelloController {
+
+    String Search = "c1.2.256";
+
     @FXML
     private Label welcomeText;
     @FXML
@@ -49,4 +43,11 @@ public class HelloController {
         welcomeText.setText("Этаж 3");
         map.setImage(floor3);
     }
+
+    @FXML
+    protected void Search() {
+        welcomeText.setText("Этаж ");
+
+    }
+
 }
