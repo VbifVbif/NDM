@@ -1,6 +1,7 @@
 package com.example.demo;
 
 
+import java.awt.*;
 import java.io.*;
 
 import javafx.fxml.FXML;
@@ -10,7 +11,8 @@ import javafx.scene.image.ImageView;
 
 public class HelloController {
 
-    String Search = "c1.2.256";
+
+
 
     @FXML
     private Label welcomeText;
@@ -46,6 +48,8 @@ public class HelloController {
 
     @FXML
     protected void Search() {
+
+      //  String Search = text.getText();
         welcomeText.setText("Этаж ");
 
     }
