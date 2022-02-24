@@ -44,78 +44,79 @@
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
-  <children>
-    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="742.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
-      <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
-        <ImageView fx:id="map" fitHeight="388.0" fitWidth="539.0" layoutX="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="3.0">
-          <image>
-            <Image url="@first.jpg" />
-          </image>
-        </ImageView>
-            <Label fx:id="welcomeText" layoutX="223.0" layoutY="14.0" prefHeight="17.0" prefWidth="205.0" text="Этаж 1">
-               <font>
-                  <Font name="Monospaced Bold" size="25.0" />
-               </font></Label>
-            <Pane layoutY="-7.0" prefHeight="410.0" prefWidth="200.0" style="-fx-background-color: efefef;">
-               <children>
-                  <ImageView fitHeight="112.0" fitWidth="200.0">
-                     <image>
-                        <Image url="@gradient1.jfif" />
-                     </image>
-                  </ImageView>
-              <Button layoutX="30.0" layoutY="121.0" mnemonicParsing="false" onAction="#First" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 1" textAlignment="RIGHT">
-                     <font>
-                        <Font name="Roboto" size="16.0" />
-                     </font>
-                  </Button>
-                  <Line endX="53.60002136230469" layoutX="111.0" layoutY="169.0" startX="-100.0" strokeWidth="0.5" />
-                  <Button layoutX="30.0" layoutY="171.0" mnemonicParsing="false" onAction="#Second" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 2" textAlignment="RIGHT">
-                     <font>
-                        <Font name="Roboto" size="16.0" />
-                     </font>
-                  </Button>
-                  <Line endX="53.60002136230469" layoutX="111.0" layoutY="219.0" startX="-100.0" strokeWidth="0.5" />
-                  <Button layoutX="30.0" layoutY="221.0" mnemonicParsing="false" onAction="#Third" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 3" textAlignment="RIGHT">
-                     <font>
-                        <Font name="Roboto" size="16.0" />
-                     </font>
-                  </Button>
-                  <Line endX="53.60002136230469" layoutX="112.0" layoutY="269.0" startX="-100.0" strokeWidth="0.5" />
-                  <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="136.0">
-                     <image>
-                        <Image url="@iconmap.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="186.0">
-                     <image>
-                        <Image url="@iconmap.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="236.0">
-                     <image>
-                        <Image url="@iconmap.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="96.0" fitWidth="183.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Astana_IT_University.png" />
-                     </image>
-                  </ImageView>
-                  <Button layoutX="30.0" layoutY="271.0" mnemonicParsing="false" onAction="#Search" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="О нас" textAlignment="RIGHT">
-                     <font>
-                        <Font name="Roboto" size="16.0" />
-                     </font>
-                  </Button>
-                  <Line endX="53.60002136230469" layoutX="115.0" layoutY="319.0" startX="-100.0" strokeWidth="0.5" />
-                  <TextField fx:id="text" layoutX="18.0" layoutY="356.0" promptText="c1.2.226" onAction="#Search"/>
-               </children>
-            </Pane>
-      </children>
-    </AnchorPane>
-  </children>
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="742.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="map" fitHeight="388.0" fitWidth="539.0" layoutX="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="3.0">
+                    <image>
+                        <Image url="@first.jpg" />
+                    </image>
+                </ImageView>
+                <Label fx:id="welcomeText" layoutX="223.0" layoutY="14.0" prefHeight="17.0" prefWidth="410.0" text="Этаж 1">
+                    <font>
+                        <Font name="Monospaced Bold" size="25.0" />
+                    </font></Label>
+                <Pane layoutY="-7.0" prefHeight="410.0" prefWidth="200.0" style="-fx-background-color: efefef;">
+                    <children>
+                        <ImageView fitHeight="112.0" fitWidth="200.0">
+                            <image>
+                                <Image url="@gradient1.jfif" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="30.0" layoutY="121.0" mnemonicParsing="false" onAction="#First" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 1" textAlignment="RIGHT">
+                            <font>
+                                <Font name="Roboto" size="16.0" />
+                            </font>
+                        </Button>
+                        <Line endX="53.60002136230469" layoutX="111.0" layoutY="169.0" startX="-100.0" strokeWidth="0.5" />
+                        <Button layoutX="30.0" layoutY="171.0" mnemonicParsing="false" onAction="#Second" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 2" textAlignment="RIGHT">
+                            <font>
+                                <Font name="Roboto" size="16.0" />
+                            </font>
+                        </Button>
+                        <Line endX="53.60002136230469" layoutX="111.0" layoutY="219.0" startX="-100.0" strokeWidth="0.5" />
+                        <Button layoutX="30.0" layoutY="221.0" mnemonicParsing="false" onAction="#Third" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Этаж 3" textAlignment="RIGHT">
+                            <font>
+                                <Font name="Roboto" size="16.0" />
+                            </font>
+                        </Button>
+                        <Line endX="53.60002136230469" layoutX="112.0" layoutY="269.0" startX="-100.0" strokeWidth="0.5" />
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="136.0">
+                            <image>
+                                <Image url="@iconmap.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="186.0">
+                            <image>
+                                <Image url="@iconmap.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="8.0" layoutY="236.0">
+                            <image>
+                                <Image url="@iconmap.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="183.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Astana_IT_University.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="30.0" layoutY="271.0" mnemonicParsing="false" onAction="#Info" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: efefef; -fx-alignment: left;" text="Инфо" textAlignment="RIGHT">
+                            <font>
+                                <Font name="Roboto" size="16.0" />
+                            </font>
+                        </Button>
+                        <Line endX="53.60002136230469" layoutX="115.0" layoutY="319.0" startX="-100.0" strokeWidth="0.5" />
+                        <TextField fx:id="Tfield" layoutX="15.0" layoutY="356.0" onAction="#Search" prefHeight="25.0" prefWidth="129.0" promptText="c1.2.256" />
+                        <Button fx:id="SearchB" layoutX="156.0" layoutY="356.0" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="26.0" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
 </VBox>

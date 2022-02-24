@@ -64,7 +64,7 @@ public class HelloController {
     protected void Search() {
         Search = Tfield.getText();
 
-        welcomeText.setText("Этаж " + Search.charAt(5)+ " Корпус " + Search.charAt(3));
+        welcomeText.setText(Search);
         if(Search.charAt(5)=='1'){
             map.setImage(floor1);
         }
