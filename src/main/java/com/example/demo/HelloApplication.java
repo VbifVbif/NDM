@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
+            //задает сцену, название и тд
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("teseter3.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -16,7 +17,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
+    //Запуск
     public static void main(String[] args) {
         launch();
 

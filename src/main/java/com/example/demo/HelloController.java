@@ -20,15 +20,15 @@ public class HelloController {
     @FXML
     private Label welcomeText;
     @FXML
-    public ImageView map;
+    public ImageView map; // подключение к картинкам из fxml
 
-    FileInputStream inputstream1 = new FileInputStream("first.jpg");
+    FileInputStream inputstream1 = new FileInputStream("first.jpg");// загрузка картинок в приложение
     Image floor1 = new Image(inputstream1);
-    FileInputStream inputstream2 = new FileInputStream("second.jpg");
+    FileInputStream inputstream2 = new FileInputStream("second.jpg");// загрузка картинок в приложение
     Image floor2 = new Image(inputstream2);
-    FileInputStream inputstream3 = new FileInputStream("third.png");
+    FileInputStream inputstream3 = new FileInputStream("third.png");// загрузка картинок в приложение
     Image floor3 = new Image(inputstream3);
-    FileInputStream inputstream4 = new FileInputStream("info.png");
+    FileInputStream inputstream4 = new FileInputStream("info.png");// загрузка картинок в приложение
     Image info = new Image(inputstream4);
 
     public HelloController() throws FileNotFoundException {
@@ -62,9 +62,10 @@ public class HelloController {
     //Это функция навигатора
     @FXML
     protected void Search() {
-        Search = Tfield.getText();
 
-        welcomeText.setText(Search);
+        Search = Tfield.getText();//считывает текст и сохраняет его в переменную search
+        welcomeText.setText("Этаж " + Search.charAt(5) + " Корпус " + Search.charAt(3)); //Считывает определенный по счету символ и вписывает его в информацию о местоположении кабитнета
+        ///ниже условие которое определяет какую карту нужно включить, для заданного кабинета
         if(Search.charAt(5)=='1'){
             map.setImage(floor1);
         }
