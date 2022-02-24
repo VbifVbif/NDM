@@ -21,7 +21,7 @@ public class HelloController {
     private Label welcomeText;
     @FXML
     public ImageView map;
-    //Image image = new ImageInput("C:\\Users\\Michael\\IdeaProjects\\demo\\images\\floor2.png");
+
     FileInputStream inputstream1 = new FileInputStream("first.jpg");
     Image floor1 = new Image(inputstream1);
     FileInputStream inputstream2 = new FileInputStream("second.jpg");
@@ -52,7 +52,7 @@ public class HelloController {
         welcomeText.setText("Этаж 3");
         map.setImage(floor3);
     }
-
+    //Это функция показа инфы
     @FXML
     protected void Info() {
         welcomeText.setText("");
